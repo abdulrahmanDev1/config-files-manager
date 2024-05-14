@@ -7,7 +7,7 @@
   "types": "./dist/index.d.ts",
   "homepage": "http://github.com/abdulrahmandev1/config-files-manager/README.md",
   "repository": {
-    "url": "http://github.com/abdulrahmandev1/config-files-manager"
+    "url": "git+ssh://git@github.com/abdulrahmandev1/config-files-manager.git"
   },
   "scripts": {
     "lint": "tsc",
@@ -38,6 +38,6 @@
     "typescript": "^5.4.5"
   },
   "bin": {
-    "cfm": "./dist/index.js"
+    "cfm": "dist/index.js"
   }
 }
