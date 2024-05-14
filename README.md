@@ -24,18 +24,25 @@ Config Files Manager is here to save the day!
 
 - **Update a config file**: Update a configuration file name or path.
 
-- **Backup options**: Provides options for backing up your configuration files.
-
-  - Create a backup of all config files : Create a backup of all configuration files managed by the pakage.
-  - List all backup files : List all the backup files that are currently being managed by the pakage.
-  - Use a backup file : Use a backup file to restore the configuration files.
-  - Delete a backup file : Delete a backup file.
-
 - **Set the editor**: Set the text editor that will be used to open configuration files.
 
 - **Show path of the config file**: This feature shows the path of the current configuration file.
 
-## Requirements (required)
+- <details>
+  <summary><strong>Backup options</strong></summary>
+  <p>
+
+  Provides options for backing up your configuration files.
+
+  - Create a backup of all config files: Create a backup of all configuration files managed by the package.
+  - List all backup files: List all the backup files that are currently being managed by the package.
+  - Use a backup file: Use a backup file to restore the configuration files.
+  - Delete a backup file: Delete a backup file.
+
+</p>
+</details>
+
+## Requirements
 
 - Node.js version 12 or higher
 - NPM (Node Package Manager)
