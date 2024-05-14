@@ -3,5 +3,8 @@
 
 .env
 
+/.changesets
+/.github
+/.vscode
 tsconfig.json
 tsup.config.ts
