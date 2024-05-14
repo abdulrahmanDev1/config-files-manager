@@ -9,19 +9,19 @@ Fork the Repository: Click the "Fork" button at the top right to create your own
 Clone the Repository: Copy the repository URL, open your terminal, and run:
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/abdulrahmanDev1/config-files-manager
 ```
 
-install the dependencies: run the following command to install the dependencies:
+Navigate to the Repository and Install Dependencies:
 
 ```sh
+cd config-files-manager
 pnpm install
 ```
 
-Create a New Branch: Navigate to the repository directory and create a new branch:
+Create a New Branch: Create a new branch to work on your changes:
 
 ```sh
-cd <repository-name>
 git checkout -b <branch-name>
 ```
 
