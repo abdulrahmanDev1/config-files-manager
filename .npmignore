@@ -3,7 +3,7 @@
 
 .env
 
-/.changesets
+/.changeset
 /.github
 /.vscode
 tsconfig.json
