@@ -75,6 +75,16 @@ or
 cfm
 ```
 
+You can also specify the command you want to run directly from the terminal:
+
+- `--add` or `-a`: Add a new configuration file.
+- `--list` or `-l`: List all configuration files.
+- `--remove` or `-r`: Remove a configuration file.
+- `--update` or `-u`: Update a configuration file.
+- `--backup` or `-b`: Backup options.
+- `--set-editor` or `-s`: Set the text editor.
+- `--help` or `-h`: Show help.
+
 ## License
 
 this project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details

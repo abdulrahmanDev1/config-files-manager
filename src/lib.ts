@@ -13,7 +13,7 @@ import {
 } from './imports';
 import { checkPath } from './utils';
 
-const program = new Command();
+export const program = new Command();
 
 export const configFolderPath = `${require('os').homedir()}/.config-files-manager`;
 if (!fs.existsSync(configFolderPath)) {
@@ -22,8 +22,6 @@ if (!fs.existsSync(configFolderPath)) {
 export const defaultPath = `${configFolderPath}/config.json`;
 
 export const options = program.opts();
-
-options.path = defaultPath;
 
 if (!options.path) {
   options.path = defaultPath;

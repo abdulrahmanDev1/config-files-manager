@@ -15,7 +15,7 @@ import {
   updateConfigFile,
   backupOptions,
 } from './utils';
-import runProgram, { defaultPath, saveConfig } from './lib';
+import { defaultPath, saveConfig } from './lib';
 
 const color = {
   error: colors.red.bold,
@@ -25,6 +25,7 @@ const color = {
   info: colors.cyan,
   danger: colors.red,
   magenta: colors.magenta,
+  gray: colors.black_bt,
 };
 
 export {
@@ -47,5 +48,4 @@ export {
   removeConfigFile,
   updateConfigFile,
   backupOptions,
-  runProgram,
 };

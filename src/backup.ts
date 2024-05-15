@@ -97,8 +97,43 @@ export const listBackupFiles = () => {
     );
   }
 
-  backupFiles.forEach((file, index) => {
-    console.log(color.warn(`[${index + 1}] `) + `${file}`);
+  rl.question('Enter a number to open the file: ', (answer: string) => {
+    const index = parseInt(answer) - 1;
+    if (index >= 0 && index < backupFiles.length) {
+      const selectedFile = backupFiles[index];
+      const configData = fs.readFileSync(options.path, 'utf-8');
+      const config = JSON.parse(configData);
+      const editor = config.userConfigs?.editor;
+      if (editor) {
+        try {
+          console.log(color.info(`Opening file ${selectedFile} in ${editor}`));
+          exec(
+            `${editor} "${backupFolderPath}/${selectedFile}"`,
+            (error: any) => {
+              if (error) {
+                console.log(
+                  color.danger(
+                    `The editor ${editor} is not installed or not found`
+                  )
+                );
+                console.log(color.warn('Please set another editor'));
+                setEditor();
+              } else {
+                backupOptions();
+              }
+            }
+          );
+        } catch (error) {
+          console.log(color.danger(`Error opening file: ${error}`));
+        }
+      } else {
+        console.log(color.warn('No editor specified. Set the editor first'));
+        setEditor();
+      }
+    } else {
+      console.log(color.warn('Invalid number'));
+      backupOptions();
+    }
   });
   rl.question('Enter a number to open the file: ', (answer: string) => {
     const index = parseInt(answer) - 1;

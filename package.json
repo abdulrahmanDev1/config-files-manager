@@ -1,11 +1,11 @@
 {
   "name": "config-files-manager",
   "description": "A package for managing configuration files from the command line",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "homepage": "http://github.com/abdulrahmandev1/config-files-manager/README.md",
+  "homepage": "https://github.com/abdulrahmanDev1/config-files-manager/blob/main/README.md",
   "repository": {
     "url": "git+ssh://git@github.com/abdulrahmandev1/config-files-manager.git"
   },
